@@ -5,14 +5,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
-  nome;
+  private nome;
 
   constructor(){
       this.nome = "Leonardo";
   }
 
   getNome(){
-    return "Método retorna " + this.nome;
+    return "Método retorna o nome: " + this.nome;
   }
 
 }
